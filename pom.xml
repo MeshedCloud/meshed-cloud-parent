@@ -4,9 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>cn.meshed.base</groupId>
+        <artifactId>meshed-base-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
     <groupId>cn.meshed.cloud</groupId>
     <artifactId>meshed-cloud-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -17,13 +22,13 @@
              架构依赖
          -->
         <!-- Spring Cloud 依赖 -->
-        <spring.boot.version>2.6.3</spring.boot.version>
-        <!-- Spring Cloud 依赖 -->
-        <spring.cloud.version>2021.0.1</spring.cloud.version>
+        <spring.cloud.version>2021.0.4</spring.cloud.version>
         <!-- spring cloud alibaba 依赖 -->
-        <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
+        <spring.cloud.alibaba.version>2021.0.4.0</spring.cloud.alibaba.version>
         <spring.cloud.bootstrap.version>3.0.2</spring.cloud.bootstrap.version>
         <dubbo-bom.version>3.0.2.1</dubbo-bom.version>
+        <!--  spring-web依赖 -->
+        <spring-web.version>5.3.22</spring-web.version>
     </properties>
 
 
@@ -73,6 +78,13 @@
             <!--
                 体系依赖导入 结束
             -->
+
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring-web.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
