@@ -26,6 +26,8 @@
         <!-- spring cloud alibaba 依赖 -->
         <spring.cloud.alibaba.version>2021.0.4.0</spring.cloud.alibaba.version>
         <spring.cloud.bootstrap.version>3.0.2</spring.cloud.bootstrap.version>
+        <!-- Spring Boot 依赖 -->
+        <spring.boot.version>2.6.11</spring.boot.version>
         <dubbo-bom.version>3.0.2.1</dubbo-bom.version>
         <!--  spring-web依赖 -->
         <spring-web.version>5.3.22</spring-web.version>
